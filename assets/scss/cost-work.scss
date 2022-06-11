@@ -1,0 +1,225 @@
+h3{
+  font-weight: 700;
+  font-size: 18px;
+  text-indent: 20px;
+  text-align: justify;
+  &:last-of-type{
+    margin-bottom: 50px;
+  }
+  a{
+    color: var(--blue-color);
+    font-weight: 700;
+    text-decoration: underline;
+  }
+}
+.custom-lict{
+  max-width: 815px;
+  width: 100%;
+  margin: 0 auto 45px;
+  h5{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+  li{
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    &:before{
+      content: '';
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: url('../img/galochka.png') no-repeat 50% 50%;
+      background-size: contain;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+form{
+  max-width: 815px;
+  width: 100%;
+  margin: 0 auto;
+  h5{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .inp-text{
+    border: none;
+    border-bottom: 1px solid  #231f20;
+    max-width: 350px;
+    width: 100%;
+    margin-bottom: 50px;
+    padding-bottom: 7px;
+    font-size: 16px;
+  }
+}
+.top-form{
+  margin-bottom: 100px;
+  p{
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+  .all-check{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+    max-width: 815px;
+    width: 100%;
+    margin: 0 auto 70px;
+  }
+  .one-part{
+    margin-bottom: 40px;
+  }
+  .one-radio{
+    margin-bottom: 20px;
+    input{
+      display: none;
+    }
+    label{
+      font-size: 14px;
+    }
+    input + label{
+      position: relative;
+      padding: 5px 5px 15px 30px; 
+      margin-top: 0px;
+    }
+    input + label:before{
+      position: relative;
+      content: '';
+      position: absolute; top: 5px; left: 0;
+      width: 18px;
+      height: 18px;
+      background-color: #ffffff;
+      border-radius: 2px;
+      border: 2px solid #70D2F2;
+      padding: 2px;
+      border-radius: 50%;
+      box-shadow: 
+        0px 0px 1px 3px #ffffff inset;
+    }
+     input:checked + label:before{
+      background-image: linear-gradient(to right, #00aedb 0%, #aee5ff 83%, #aee5ff 100%);
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .button-with-arrow{
+    max-width: 265px;
+    display: flex;
+    margin: 0 auto;
+    button{
+      padding: 17px 5px;
+      min-width: 250px;
+      height: auto;
+      border-radius: 26px;
+    }
+    span{
+      width: 44px;
+      min-width: 44px;
+      height: 44px;
+    }
+  }
+}
+
+.form-email{
+  margin-bottom: 50px;
+  h5{
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .two-part{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .button-with-arrow{
+    max-width: 300px;
+    display: flex;
+    margin: 0 auto;
+    button{
+      padding: 17px 5px;
+      min-width: 276px;
+      height: auto;
+      border-radius: 26px;
+    }
+    span{
+      width: 44px;
+      min-width: 44px;
+      height: 44px;
+    }
+  }
+}
+
+
+@media (min-width: 768px){
+  .top-form{
+    .all-check{
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+  }
+  .form-email{
+    .button-with-arrow{
+      max-width: 450px;
+      button{
+        min-width: 435px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px){
+  .all-cost{
+    position: relative;
+    overflow: hidden;
+    &:before, &:after{
+      content: '';
+      position: absolute;
+      z-index: -1;
+    }
+    &:before{
+      background: url('../img/cost3.png') no-repeat 50% 50%;
+      top: 35%;
+      right: 0;
+      width: 800px;
+      height: 1175px;
+    }
+    &:after{
+      background: url('../img/cost2.png') no-repeat 50% 50%;
+      top: 40%;
+      left: 5%;
+      width: 514px;
+      height: 735px;  
+    }
+  }
+  .top-form{
+    .one-part{
+      margin-bottom: 50px;
+    }
+    .left-part{
+      margin-right: 100px;
+    }
+  }
+  .form-email{
+    .two-part{
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: 1280px){
+  .top-form{
+    .left-part{
+      margin-right: 200px;
+    }
+  }
+}
